@@ -1,0 +1,38 @@
+unit Unit4;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Grids, DBGrids, ExtCtrls, DBCtrls, StdCtrls, ComCtrls;
+
+type
+  TForm4 = class(TForm)
+    DBGrid1: TDBGrid;
+    Button1: TButton;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+uses Unit2, Unit5;
+
+{$R *.dfm}
+
+
+
+procedure TForm4.Button1Click(Sender: TObject);
+begin
+Form5.QuickRep1.PreviewModal;
+end;
+
+end.
